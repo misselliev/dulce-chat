@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>DulceChat</title>
+    <%= favicon_link_tag %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +11,11 @@
   </head>
 
   <body>
+    <div class="ui small inverted menu attached">
+      <div class="ui container">
+        <%= render 'layouts/navigation'%>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
